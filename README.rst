@@ -3,7 +3,6 @@ Django X Power
 
 :Authors:
    Justin Quick <justquick@gmail.com>
-:Version: 0.1
    Paul Michali <pmichali@gmail.com>
 :Version: 0.2
 
@@ -41,21 +40,25 @@ Testing
 An example project is provided to test. Using poetry to ensure version of python and
 Django. Steps are:
 
-```
+``
 poetry shell
 cd example
 python3 manage.py runserver
 curl -i http://localhost:8000 | head
-```
+``
 
 You should see something like this::
 
-    HTTP/1.0 200 OK
-    Date: Wed, 07 Jul 2010 15:40:59 GMT
-    Server: WSGIServer/0.1 Python/2.6.1
-    Content-Type: text/html
-    X-Powered-By: Django/1.2.1 SVN-13336
-
+    HTTP/1.1 200 OK
+    Date: Mon, 04 Dec 2023 20:25:50 GMT
+    Server: WSGIServer/0.2 CPython/3.12.0
+    Content-Type: text/html; charset=utf-8
+    X-Powered-By: Me, Myself, and Irene
+    X-Frame-Options: DENY
+    Content-Length: 10629
+    X-Content-Type-Options: nosniff
+    Referrer-Policy: same-origin
+    Cross-Origin-Opener-Policy: same-origin
 
 Alternates
 ----------
@@ -71,5 +74,5 @@ Some alternatives for the header contents:
 Version History
 ---------------
 
-0.2.0 Updated for newer Django version (5.0). Using Poetry for version control
-0.1.0 Initial release
+ * 0.2.0 Updated for newer Django version (5.0). Using Poetry for version control
+ * 0.1.0 Initial release
