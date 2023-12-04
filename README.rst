@@ -2,8 +2,10 @@ Django X Power
 ===============
 
 :Authors:
+
     Justin Quick <justquick@gmail.com>
     Paul Michali <pmichali@gmail.com>
+
 :Version: 0.2.0
 
 
@@ -38,7 +40,7 @@ Testing
 --------
 
 An example project is provided to test. Using poetry to ensure version of python and
-Django. Steps are:
+Django. Steps are::
 
     poetry shell
     cd example
