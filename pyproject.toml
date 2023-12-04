@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "django-xpower"
+version = "0.2.0"
+description = "X-Powered-By override for Django"
+authors = ["Paul Michali <pc@michali.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
