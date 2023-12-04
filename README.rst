@@ -2,9 +2,9 @@ Django X Power
 ===============
 
 :Authors:
-   Justin Quick <justquick@gmail.com>
-   Paul Michali <pmichali@gmail.com>
-:Version: 0.2
+    Justin Quick <justquick@gmail.com>
+    Paul Michali <pmichali@gmail.com>
+:Version: 0.2.0
 
 
 ::
@@ -40,12 +40,10 @@ Testing
 An example project is provided to test. Using poetry to ensure version of python and
 Django. Steps are:
 
-``
-poetry shell
-cd example
-python3 manage.py runserver
-curl -i http://localhost:8000 | head
-``
+    poetry shell
+    cd example
+    python3 manage.py runserver
+    curl -i http://localhost:8000 | head
 
 You should see something like this::
 
