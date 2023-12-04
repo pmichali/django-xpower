@@ -4,11 +4,13 @@ Django X Power
 :Authors:
    Justin Quick <justquick@gmail.com>
 :Version: 0.1
+   Paul Michali <pmichali@gmail.com>
+:Version: 0.2
 
 
 ::
 
-    pip install django-xpower==0.1.0
+    pip install django-xpower==0.2.0
 
 Django X Power is a simple middleware that adds the ``X-Powered-By`` header to any Django site.
 
@@ -36,8 +38,16 @@ where ``%(version)s`` is replaced with the version of Django that you are using.
 Testing
 --------
 
-An example project is provided so just run ``./manage.py runserver`` and then you can
-confirm that it is working by running ``curl -i http://localhost:8000 | head``.
+An example project is provided to test. Using poetry to ensure version of python and
+Django. Steps are:
+
+```
+poetry shell
+cd example
+python3 manage.py runserver
+curl -i http://localhost:8000 | head
+```
+
 You should see something like this::
 
     HTTP/1.0 200 OK
@@ -57,3 +67,9 @@ Some alternatives for the header contents:
  * A series of tubes
  * Perfectionists with deadlines
  * Opinionated developers
+
+Version History
+---------------
+
+0.2.0 Updated for newer Django version (5.0). Using Poetry for version control
+0.1.0 Initial release
