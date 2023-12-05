@@ -13,10 +13,14 @@ Django X Power is a simple middleware that adds the ``X-Powered-By`` header to a
 
 ## Install
 From PyPI, you can install version 0.1.0:
-    pip install django-xpower==0.2.0
+```
+pip install django-xpower==0.2.0
+```
 
 For version 0.2.0, you can install from GitHub with:
-    poetry add git+https://github.com/pmichali/django-xpower.git
+```
+poetry add git+https://github.com/pmichali/django-xpower.git
+```
 
 ## Using in Django
 In the project's `setting.py`, add this middleware to the Middleware class list:
@@ -27,7 +31,7 @@ In the project's `setting.py`, add this middleware to the Middleware class list:
     )
 
 You can configure what you want for the X-Powered-By header by setting the following variable
-in settings.py:
+in `settings.py`:
 
     X_POWERED_BY = 'Django'
     
