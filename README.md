@@ -1,5 +1,23 @@
 # Django X Power
 
+
+## NOTE
+This is a total rewrite of the original package, so that it works with DJango 5.0+, where
+there have been changes in middleware, app structure, and in deploying packages. I kept
+the same licensing that was mentioned, and rough naming, even though it is 99% different.
+I would likely have to name it differently, to publish on PyPI, however.
+
+Even though it works when testing locally, I've abandoned the effort, as with some environments,
+like my hosting provider, which uses Phusion Passenger, I was seeing that some headers are
+added AFTER all the middleware runs. In particular, X-Powered-By, so I still could not mask
+out/change that information. I was ideally thinking of making this more generic, so that
+multiple 'unsafe' headers (e.g. Server and many others) could be removed or changed, but it
+won't work uing middleware (yes, I did try this as the first middleware, so it changes
+response headers last).
+
+Leaving it here, in case things change, or I need to create other middleware, as it provides
+an example.
+
 ## Authors
 + Justin Quick <justquick@gmail.com>
 + Paul Michali <pmichali@gmail.com>
