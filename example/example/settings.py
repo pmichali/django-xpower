@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'xpower.middleware.XPoweredByMiddleware',
+    'django_xpower.middleware.XPoweredByMiddleware',
 ]
 
 X_POWERED_BY = "Me, Myself, and Irene"

@@ -26,7 +26,7 @@ poetry add git+https://github.com/pmichali/django-xpower.git
 In the project's `setting.py`, add this middleware to the Middleware class list:
 
     MIDDLEWARE_CLASSES = (
-        'xpower.middleware.XPoweredByMiddleware',
+        'django_xpower.middleware.XPoweredByMiddleware',
         ...
     )
 
@@ -65,5 +65,5 @@ You should see something like this:
     Cross-Origin-Opener-Policy: same-origin
 
 ## Version History
- * 0.2.0 Updated for newer Django version (5.0). Using Poetry for version control
+ * 0.2.0 Updated for newer Django version (5.0). Using Poetry for version control, and newer packaging
  * 0.1.0 Initial release
